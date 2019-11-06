@@ -1,7 +1,16 @@
+import Fundamentals.Bag;
+
 public class Main {
     public static void main(String[] args) {
-        String s = new String();
-        String s1 = new String();
-        System.out.println(s.equals(s1));
+        Bag<String> bag = new Bag<String>();
+        bag.add("one");
+        bag.add("two");
+        bag.add("three");
+        bag.add("four");
+        bag.add("five");
+        for (String b: bag) {
+            System.out.println(b);
+        }
     }
+    
 }
